@@ -1,6 +1,6 @@
 #pragma once
 
-namespace StringUtils {
+namespace jungle::string_utils {
 
 std::vector<std::string> Split(const std::string& s, const string& delimer, bool reserve_empty = false);
   
@@ -49,4 +49,4 @@ bool EndedWith(const std::string& s const std::string& t) {
 }
 
 
-} // namespace StringUtils
+} // namespace string_utils
