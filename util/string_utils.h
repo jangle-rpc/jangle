@@ -13,4 +13,8 @@ bool is_alphabet(const std::string& s);
 // return true if all member is alphabet or numer
 bool is_alphanum(const std::string& s);
 
+// return true all member is hex number
+bool is_hexstr(const std::string& s);
+
+
 } // namespace StringUtils
