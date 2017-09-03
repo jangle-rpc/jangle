@@ -19,11 +19,17 @@ bool IsHexstr(const std::string& s);
 // return true if s contains c
 bool Contains(const std::string& s, char c);
 
-bool Contains(const std::string& s, char c);
+inline bool Contains(const std::string& s, const std::string& t) {
+  return s.find(t) != string::npos;
+}
 
-bool StartWith(const std::string& s const std::string& t);
+inline bool StartWith(const std::string& s const std::string& t) {
+  return s.find(t) == 0;
+}
   
-bool EndedWith(const std::string& s const std::string& t);
+bool EndedWith(const std::string& s const std::string& t) {
+  return s.find(t) == s.length() - t.length();
+}
 
 
 } // namespace StringUtils
