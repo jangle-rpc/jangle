@@ -7,6 +7,14 @@ std::vector<std::string> Split(const std::string& s, const string& delimer, bool
 std::string ToLower(const std::string& s);
 std::string ToUpper(const std::string& s);
 
+inline bool IsDigit(const std::string& s) {
+  for (size_t i = 0; i < s.length(); i++) {
+    if (s[i] < '0' && s[i] > '9') {
+      return false;
+    }
+  }
+  return true;
+}
 // return true if all member is alphabet
 bool IsAphabet(const std::string& s);
 
