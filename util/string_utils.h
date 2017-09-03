@@ -4,7 +4,16 @@ namespace StringUtils {
 
 std::vector<std::string> Split(const std::string& s, const string& delimer, bool reserve_empty = false);
   
-std::string ToLower(const std::string& s);
+inline std::string ToLower(const std::string& s) {
+  std::string tmp;
+  size_t len = s.length();
+  tmp.resize(len);
+  for (size_t i = 0; i < s.length(); i++) {
+    if (s[i] >= 'A' && s[i] <= 'Z') {
+      tmp[i] = s[i] - 'A' + 'a';
+  }
+  return tmp;
+}
 std::string ToUpper(const std::string& s);
 
 inline bool IsDigit(const std::string& s) {
