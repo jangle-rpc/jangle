@@ -8,4 +8,6 @@ bool IsExist(const std::string& path);
 
 Status CreateFile(const std::string& path);
 
+Status DeleteFile(const std::string& path);
+
 } // namespace file_utils
