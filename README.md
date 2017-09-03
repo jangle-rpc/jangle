@@ -13,3 +13,4 @@
 * 同步调用、异步调用、协程
 * 心跳检测
 * 多service, 多端口
+* Protocol Buffers 和 FlatBuffers 可选
