@@ -1,4 +1,4 @@
 #pragma once
 
-namespace file_utils {
+namespace jungle::file_utils {
 } // namespace file_utils
