@@ -1,6 +1,7 @@
 # jangle
 
 * C++11， Linux 2.6+
+* 基于协程
 * 多客户端协议
 * 服务端多协议
 * jangle默认的协议中，序列化 Protocol Buffers 和 FlatBuffers 可选
@@ -13,6 +14,5 @@
 * 配置自动加载
 * json接口测试
 * 简易http监控界面
-* 同步调用、异步调用、协程
 * 心跳检测
 
