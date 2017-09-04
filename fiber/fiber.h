@@ -1,4 +1,4 @@
 #pragma once
 
-namespace jangle::coroutine {
+namespace jangle::fiber {
 } // namespace jangle::coroutine
